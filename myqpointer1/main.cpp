@@ -29,8 +29,10 @@ int main(int argc, char *argv[])
     QPointer<abc> pabc=new abc(10);
 
     pabc->print();
-    delete p;
-    delete pabc;
+   // delete p;
+  //  delete pabc;
+    pabc.clear();
+    qDebug()<<pabc.isNull();
 
     return a.exec();
 }
